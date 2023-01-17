@@ -5,7 +5,7 @@ const weatherData = document.getElementById("weather-data");
 searchBtn.addEventListener("click", async (e) => {
   e.preventDefault();
   const location = locationInput.value;
-  const weatherAPI = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${WEA_API_KEY}&units=metric`;
+  const weatherAPI = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=3f29c70f59d85475026fff1438772527&units=metric`;
   weatherData.innerHTML = `<p>Loading...</p>`;
   try {
     const response = await fetch(weatherAPI);
