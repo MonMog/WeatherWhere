@@ -29,11 +29,9 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
       
-      - name: Set environment variables, you know, the ones who have forced me to make over 1million commits because either im stupid or its stupid and this is hard to tell
-        run: |
-          echo please work man, I am begging you
-        env:
-         WEA_API_KEY: ${{ secrets.WEA_API_KEY }}
+      - name: Set environment variables
+        run: echo ::set-env name=WEA_API_KEY::${{ secrets.WEA_API_KEY }}
+
 
 
       # Runs a set of commands using the runners shell
