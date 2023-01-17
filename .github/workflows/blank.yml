@@ -30,7 +30,8 @@ jobs:
         run: echo Hello, world!
       
       - name: Set environment variables
-        run: echo ::set-env name=WEA_API_KEY::${{ secrets.WEA_API_KEY }}
+        env:
+          WEA_API_KEY: ${{ secrets.WEA_API_KEY }}
 
 
 
