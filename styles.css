@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  form {
+    margin: 40px 0;
+  }
+  
+  #weather-data {
+    margin: 40px 0;
+  }
+  
