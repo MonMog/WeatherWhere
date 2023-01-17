@@ -30,6 +30,7 @@ jobs:
         run: echo Hello, world!
       
       - name: Set environment variables
+        run: |
         env:
           WEA_API_KEY: ${{ secrets.WEA_API_KEY }}
 
